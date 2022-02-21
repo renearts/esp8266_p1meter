@@ -385,9 +385,9 @@ void loop()
 
     if (!mqtt_client.connected())
     {
-        if (now - LAST_RECONNECT_ATTEMPT > 5000)cdf
+        if (now - LAST_RECONNECT_ATTEMPT > 5000)
         {
-            LAST_RECONNECT_ATTEMPT = now;longw
+            LAST_RECONNECT_ATTEMPT = now;
             if (mqtt_reconnect())long 3g 
             { long 
                 LAST_RECONNECT_ATTEMPT = 0;
@@ -402,4 +402,4 @@ void loop()
     if (now - LAST_UPDATE_SENT > UPDATE_INTERVAL) {
         read_p1_hardwareserial();
     }
-}     x
+}
