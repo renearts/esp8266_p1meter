@@ -3,7 +3,7 @@
 // **********************************
 
 // Update treshold in milliseconds, messages will only be sent on this interval
-#define UPDATE_INTERVAL 60000  // 1 minute
+#define UPDATE_INTERVAL 9000  // 1 minute --> 5 seconds
 //#define UPDATE_INTERVAL 300000 // 5 minutes
 
 // * Baud rate for both hardware and software 
@@ -47,6 +47,8 @@ char MQTT_PASS[32] = "";
 char telegram[P1_MAXLINELENGTH];
 
 // * Set to store the data values read
+float TIMESTAMP;
+
 float CONSUMPTION_LOW_TARIF;
 float CONSUMPTION_HIGH_TARIF;
 
